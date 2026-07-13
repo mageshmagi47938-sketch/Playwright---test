@@ -1,0 +1,38 @@
+[
+  {
+    "testName": "Valid Login",
+    "username": "rahulshettyacademy",
+    "password": "Learning@830$3mK2",
+    "expected": "success"
+  },
+  {
+    "testName": "Invalid Username",
+    "username": "wronguser",
+    "password": "Learning@830$3mK2",
+    "expected": "Incorrent username/password."
+  },
+  {
+    "testName": "Invalid Password",
+    "username": "rahulshettyacademy",
+    "password": "wrongpass",
+    "expected": "Incorrent username/password"
+  },
+  {
+    "testName": "Invalid Username and Password",
+    "username": "wronguser",
+    "password": "wrongpass",
+    "expected": "Incorrect Username and Password"
+  },
+  {
+    "testName": "Both Empty",
+    "username": "",
+    "password": "",
+    "expected": "Empty username/password"
+  },
+  {
+    "testName": "Special Characters",
+    "username": "@@@###",
+    "password": "Learning@830$3mK2",
+    "expected": "Incorrect Username and Password"
+  }
+]
