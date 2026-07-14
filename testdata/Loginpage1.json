@@ -29,10 +29,10 @@
     "password": "",
     "expected": "Empty username/password"
   },
-  // {
-  //   "testName": "Special Characters",
-  //   "username": "@@@###",
-  //   "password": "Learning@830$3mK2",
-  //   "expected": "Incorrect Username and Password"
-  // }
+  {
+    "testName": "Special Characters",
+    "username": "@@@###",
+    "password": "Learning@830$3mK2",
+    "expected": "Incorrect Username and Password"
+  }
 ]
