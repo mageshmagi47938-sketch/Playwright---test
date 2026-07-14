@@ -6,7 +6,7 @@ for (const data of loginData) {
 
     test(data.testName, async ({ page }) => {
 
-        const login = new Loginpage1(page);                  // object ------> const reference variable = new 
+        const login = new Loginpage1(page);                  // object ------> const reference variable = new page name (page)
 
         await login.navigate();
 
