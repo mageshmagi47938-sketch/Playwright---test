@@ -1,5 +1,7 @@
 import { Page, expect, Locator } from "@playwright/test";
 
+import { log } from "node:console";
+
 export class Loginpage1 {
     page: Page;
     Username : Locator;
@@ -33,3 +35,4 @@ export class Loginpage1 {
         await expect(this.errormessage).toHaveText(message); 
     }
 }
+

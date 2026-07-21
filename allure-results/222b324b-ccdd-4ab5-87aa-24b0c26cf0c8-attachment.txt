@@ -1,0 +1,13 @@
+200
+OK
+{
+  bookingid: 3032,
+  booking: {
+    firstname: 'Magesh',
+    lastname: 'Waran',
+    totalprice: 1000,
+    depositpaid: true,
+    bookingdates: { checkin: '2026-01-02', checkout: '2026-01-03' },
+    additionalneeds: 'breakfast'
+  }
+}

@@ -10,23 +10,23 @@ test ('Web Table', async ({ page }) => {
     await expect (table).toBeVisible(); 
 
     // to count column
-    // const column  = await page.locator('table thead tr th').count();
-    // await expect (column).toEqual(6);
-    // console.log(`Total column = ${column}`);
-    // await expect (page.locator('table thead tr th')).toHaveCount(6);
+    const column  = await page.locator('table thead tr th').count();
+    await expect (column).toEqual(6);
+    console.log(`Total column = ${column}`);
+    await expect (page.locator('table thead tr th')).toHaveCount(6);
      
     // to count rows
-    // const rows = page.locator ('table tbody tr');
-    // await expect (rows).toHaveCount(9);
-    // console.log(`Total rows = ${await rows.count()}`);
+    const rows = page.locator ('table tbody tr');
+    await expect (rows).toHaveCount(9);
+    console.log(`Total rows = ${await rows.count()}`);
 
     //to get the data from single cell
-    // const singleCellvalue = await page.locator('table tbody tr:nth-child(5) td:nth-child(2)').allTextContents();
-    // console.log(singleCellvalue);
+    const singleCellvalue = await page.locator('table tbody tr:nth-child(5) td:nth-child(2)').allTextContents();
+    console.log(singleCellvalue);
     
     // to get particular row 
-    // const particularRow = await page.locator('table tbody tr:nth-child(5)').allInnerTexts();
-    // console.log(particularRow); 
+    const particularRow = await page.locator('table tbody tr:nth-child(5)').allInnerTexts();
+    console.log(particularRow); 
 
     // to get all data | Another method by taking from locators
     const data = await table.getByRole('columnheader').allInnerTexts();

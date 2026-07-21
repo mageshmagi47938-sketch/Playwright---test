@@ -8,7 +8,7 @@ test ('Multipe Window Handling', async ({ page,   }) => {
     await page.goto('https://testautomationpractice.blogspot.com/');
 
      const [newpage,undefined] = await Promise.all([
-     page.waitForEvent("popup"),                                        // <-----have to mention first before clicking button 
+     page.waitForEvent("popup"),                                            // <-----have to mention first before clicking button 
      // context.waitForEvent('page'),                                       // <----- but in cont promise.all will run parallely!
      page.getByRole("button",{ name:"New Tab" }).click(),                                  
     ]); 

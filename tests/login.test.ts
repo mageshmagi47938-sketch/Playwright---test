@@ -68,18 +68,18 @@ await page.waitForTimeout(2000);
 
 // import { test,expect } from "@playwright/test";
 
-// test("Shadow Dom", async ({page}) => {
-//     test.setTimeout(60000);
+test("Shadow Dom", async ({page}) => {
+    test.setTimeout(60000);
 
-// await page.goto("https://selectorshub.com/xpath-practice-page/");
+await page.goto("https://selectorshub.com/xpath-practice-page/");
 
-// await page.getByPlaceholder("enter name",{ exact : true }).scrollIntoViewIfNeeded();
-// await page.getByPlaceholder("enter name",{ exact:true }).fill('MAGESH');
-// await page.locator('#pizza').fill('MAARGARITA');
-// await page.locator('#training').fill('PLAYWRIGHT')
-// // await page.waitForTimeout(3000);
+await page.getByPlaceholder("enter name",{ exact : true }).scrollIntoViewIfNeeded();
+await page.getByPlaceholder("enter name",{ exact:true }).fill('MAGESH');
+await page.locator('#pizza').fill('MAARGARITA');
+await page.locator('#training').fill('PLAYWRIGHT')
+// await page.waitForTimeout(3000);
     
-// });
+});
   
 
 // Using frame Locator 
